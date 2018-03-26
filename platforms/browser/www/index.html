@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1, 
+         maximum-scale = 1, minimum-scale = 1, user-scalable = no, minimal-ui" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name = "apple-mobile-web-app-capable" content = "yes" />
+      <meta name = "apple-mobile-web-app-status-bar-style" content = "black" />
+      <title>Start App With Login Screen</title>
+       <link rel="stylesheet" href="css/styles.css">
+      <link rel = "stylesheet" 
+         href = "https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/css/framework7.ios.min.css" />
+      <link rel = "stylesheet" 
+         href = "https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/css/framework7.ios.colors.min.css" />
+       
+
+		 <style>
+@font-face {
+  font-family: 'Framework7 Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Framework7Icons-Regular.eot");
+  src: url("../fonts/Framework7Icons-Regular.woff2") format("woff2"),
+       url("../fonts/Framework7Icons-Regular.woff") format("woff"),
+       url("../fonts/Framework7Icons-Regular.ttf") format("truetype");
+}
+
+.f7-icons, .framework7-icons {
+  font-family: 'Framework7 Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+</style>			 
+   </head>
+
+   <body >
+      <div class = "views ">
+         <div class = "view view-main" >
+         
+            <div class = "navbar">
+               <div class = "navbar-inner" style="background: #333b58;">
+                  <div class = "center sliding" style="color: #fff;"><img src="img/logo_h.png"></div>
+               </div>
+            </div>
+            <br>
+            <div class = "pages">
+
+
+               <div data-page = "index" class = "page navbar-fixed">
+	               
+
+	               
+                  <div class = "page-content">
+                     <div class = ""><!--content-block-->
+
+                         
+                        <div class="" style="width:98%;margin-left:1%;margin-top:-1%;background:#ffd200;border:0px;border-radius: 5px;margin-bottom: 5%;"><!--class card였음-->
+                            <div>
+                                <div style="float: left;margin-top: 2%;margin-left: 2%; font-size: 110%;color:#000;">MTT 지갑</div>
+                                <div style="float: right;margin-top: 2%;margin-right: 10%;font-size: 110%;color:#000;">받기</div>
+                                <div style="clear: both;"></div>
+                                <span class="open-qrcode qrcode_view"></span>
+                            </div>
+                            <div style="clear: both;"></div>
+
+                            <div class=""><!--card-content-->
+                                
+                                <p>
+                                    <H3 style="text-align:center;color:#000;margin-top: 8%;margin-bottom: 8%;" >
+                                        <span style="font-size: 80%;">T3W54uvkFNF1HUn5g1LrzfibCibYnkG8xj</span>
+                                    </H3>
+                                </p>
+                                
+                                <p>
+                                    <H3 style="text-align:center;font-size: 110%;color:#000;margin-top:-7%;margin-bottom: 2%;" >
+                                        <span class="mtt">0.00</span>
+                                        <span>MTT</span>
+                                    </H3>
+                                </p>
+
+                                <p style="margin-top:-4%; margin-right: 4%;padding-bottom: 2%;">
+                                    <a href="#" data-picker=".picker-1" class="open-picker"><img src="img/btn_dot.png" style="float:right;transform: scale(0.4);opacity: 0.6;"></a>
+                                </p>
+                                <div style="clear: both;"></div><br>
+                            </div>
+                            
+                            <div class="card-header" style="background: #ffd200;padding: 0px;min-height: 0px;">
+                                    <a href="#"  class="close-picker" style="color: #000; font-size: 90%;text-align: center;width:50%;padding-top: 4%;padding-bottom: 4%;box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.2);">보내기</a>
+                                <a href="transaction.html" class="close-picker" style="color: #000; font-size: 90%;text-align: center;width:50%;padding-top: 4%;padding-bottom: 4%;box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.2);">거래내역</a>
+                            </div>
+                        </div>
+
+                         
+                         
+                        <div class="" style="width:98%;margin-left:1%;margin-top:-2%;background:#5ea1b1;border:0px;border-radius: 5px;">
+                            <div>
+                                <div style="float: left;margin-top: 2%;margin-left: 2%; font-size: 110%;color:#fff;">USD 지갑</div>
+                               <div style="float: right;margin-top: 2%;margin-right: 10%;font-size: 110%;color:#fff;">받기</div>
+                                <div style="clear: both;"></div>
+                                <img src="img/btn_qrcode.png" style="float: right;width:6%;margin-top: -5%;margin-right: 3%">
+                                
+                            </div>
+                            <div style="clear: both;"></div>
+
+                            <div><!--card-content-->
+                                
+                                <p>
+                                    <H3 style="text-align:center;color:#fff;margin-top: 8%;margin-bottom: 8%;" >
+                                        <span style="font-size: 80%;">T3W54uvkFNF1HUn5g1LrzfibCibYnkG8xj</span>
+                                    </H3>
+                                </p>
+                                
+                                <p>
+                                    <H3 style="text-align:center;font-size: 110%;color:#fff;margin-top:-7%;margin-bottom: 2%;" >
+                                        <span class="usd">0.00</span>
+                                        <span>USD</span>
+                                    </H3>
+                                </p>
+                                <p style="margin-top:-4%; margin-right: 4%;padding-bottom: 2%;">
+                                    <a href="#" data-picker=".picker-1" class="open-picker"><img src="img/btn_dot.png" style="float:right;transform: scale(0.4);opacity: 0.6;"></a>
+                                </p>
+                                <div style="clear: both;"></div><br>
+                                
+                            </div>
+
+                            <div class="card-header close-picker" style="background: #5ea1b1;padding: 0px;min-height: 0px;">
+                                <a href="#" style="color: #fff; font-size: 90%;text-align: center;width:50%;padding-top: 4%;padding-bottom: 4%;box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.2);">보내기</a>
+                                <a href="#" style="color: #fff; font-size: 90%;text-align: center;width:50%;padding-top: 4%;padding-bottom: 4%;box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.2);">거래내역</a>
+                            </div>
+                        </div>
+
+                         
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+			<div class="toolbar tabbar tabbar-labels" style="height:8%">
+			  <div class="toolbar-inner" style="background: #333b58;">
+                
+			    <a href="#tab1" class="tab-link tab-link-active">
+			      <i class="f7-icons" style="color: #fff;margin-top: 4%;">Wallet</i>
+			    </a>
+                
+			    <a href="#tab2" class="tab-link signout">
+			      <i class="f7-icons" style="color: #fff;margin-top: 4%;">Logout</i>
+			    </a>
+			  </div>
+			</div>	            
+         </div>
+      </div>
+
+
+      
+	      
+      <div class = "login-screen modal-on">
+         <div class = "view" >
+            <div class = "page">
+               <div class = "page-content login-screen-content"  style="background-image: url('img/bg.jpg');background-size: cover;">
+                  <div class = "login-screen-title" style="color: #fff;margin-top: 27%;"><img src="img/logo_v.png"></div>
+                  
+                  <form style="margin-top: 10%;">
+                     <div class = "list-block" >
+                        <ul>
+                           <li class = "item-content" style="margin-bottom: 5%;">
+                              <div class = "item-inner" style="margin-left:5%;width:85%;">
+                                 <div class = "item-title label" style="width:13%;height:150%;"><img src="img/login_id.png" style="margin-top:50%;margin-left:28%;"></div>
+                                 <div class = "item-input">
+                                    <input type = "text" name = "username" placeholder = " E-MAIL ADRESS" style="color:#80ffff;width:100%;font-weight: 500;" >
+                                 </div>
+                              </div>
+                           </li>
+                           
+                           <li class = "item-content">
+                              <div class = "item-inner" style="margin-left: 5%;width:85%;">
+                                 <div class = "item-title label" style="width:13%;height:150%;"><img src="img/login_pw.png" style="margin-top:50%;margin-left:28%;"></div>
+                                 <div class = "item-input">
+                                    <input type = "password" name = "password" placeholder = " PASSWORD" style="color:aqua;">
+                                 </div>
+                              </div>
+                           </li>
+                           
+                           <li class="item-content">
+                           	
+                           	
+                           	<div class="logMsg" style="text-align:center;color:#fff;margin:0 auto;transform:translate(-5%)"></div>
+                           </li>
+                        </ul>
+                     </div>
+                     
+                     <div class = "list-block">
+                        <ul>
+                           <li style="width:85%;margin-top:-4%;margin-left:7%; padding-top:1%;padding-bottom:1%;background:#ffd200;border-radius:2px;"><a href = "#" class = "item-link list-button" style="color:#fff;font-size:120%;">S I G N &nbsp;&nbsp;I N</a></li>
+                        </ul>
+                        <div class="test"></div>
+                        <div class = "list-block-label">
+                         <!--  <p><a href = "#" class = "close-login-screen">Click here to close Login Screen</a></p>-->
+                        </div>
+                     </div>
+                  </form>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+
+
+  <div class="picker-modal picker-1"  style=";background-color:white">
+    <div class="toolbar">
+      <div class="toolbar-inner">
+        <div class="center" style="text-align:center"><b>지갑설정</b></div>
+        <div class="right"><a href="#" class="close-picker">Done</a></div>
+      </div>
+    </div>
+	    <div class="list-block" style="height:100%;background-color:white">
+	      <ul>
+	        <li class="item-content close-picker">
+	          <div class="item-inner">
+            <div class="item-title close-picker">주소복사</div>
+          </div>
+        </li>
+        <li class="item-content">
+          <div class="item-inner">
+            <div class="item-title close-picker">이름변경</div>
+          </div>		
+        </li>
+        <li class="item-content">
+          <div class="item-inner">
+            <div class="item-title close-picker">색상변경</div>
+          </div>
+        </li>
+      </ul>
+	        
+    </div>
+  </div>
+
+
+
+  <div class="popup popup-about">
+    <div class="content-block">
+      <p><a href="#" class="close-popup">닫기</a></p>
+      <div align="center" class="qrcode_large"><BR>T3W54uvkFNF1HUn5g1LrzfibCibYnkG8xj</div>
+<p><a href="#" class="button button-fill button-big color-green">지정된 금액 요청</a></p>          
+<p><a href="#" class="button button-fill button-big color-green">새로운 주소 생성</a></p>          
+    </div>
+  </div>
+
+
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+      
+      <script type = "text/javascript" 
+         src = "https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/js/framework7.min.js"></script>
+      
+      
+      <script>
+	  
+
+
+         // Here you can initialize the app
+         var myApp = new Framework7();
+
+         // If your using custom DOM library, then save it to $$ variable
+         var $$ = Dom7;
+
+         // Add the view
+         var mainView = myApp.addView('.view-main', {
+            
+            // enable the dynamic navbar for this view:
+            dynamicNavbar: true
+         });
+        
+        
+        $$('.signout').on('click',function() {
+	        
+	       localStorage.setItem("balance",0);
+	       
+	       myApp.popup('.login-screen'); 
+	        
+	        
+	        
+        });
+        
+        
+        
+        $$('.transaction-button').on('click',function(){
+	        
+	       myApp.popup('.transaction-screen'); 
+	        
+        });
+        
+		if(localStorage.getItem("balance")==1)
+		{
+					$$('.balance').html(localStorage.getItem("balance"));
+					myApp.closeModal('.login-screen');
+					$$('.qrcode_view').html('<a href="#" class="open-qrcode"><img src="https://muztemptation.com/contents/api/mobile_qrcode.php?email='+localStorage.getItem("email")+'" style="float: right;width:6%;margin-top: -5%;margin-right: 3%"></a>')
+		}         
+		else
+		{
+					myApp.popup('.login-screen');
+		}
+		
+         $$('.login-screen .list-button').on('click', function () {
+            var uname = $$('.login-screen input[name = "username"]').val();
+            var pwd = $$('.login-screen input[name = "password"]').val();
+
+
+
+
+			$$.post('http://muz.allstar-m.com/contents/api/mobile.php', {email:uname, password: pwd}, function (data) {
+				if(data!="0")
+				{
+					
+					var dt=JSON.parse(data);
+					localStorage.setItem("balance",1);
+					localStorage.setItem("email", dt.email);
+					localStorage.setItem("password", dt.password);
+					
+					myApp.closeModal('.login-screen');
+					
+					
+					$$('.qrcode_view').html('<a href="#" class="open-qrcode"><img src="https://muztemptation.com/contents/api/mobile_qrcode.php?email='+localStorage.getItem("email")+'" style="float: right;width:6%;margin-top: -5%;margin-right: 3%"></a>')
+				}
+				else
+				{
+					$$('.logMsg').html('이메일 혹은 비밀번호가 다릅니다.');
+					
+					
+				}
+				
+			});
+
+
+            
+
+         });
+         
+		
+		$$('.open-qrcode').on('click', function () {
+		  myApp.popup('.popup-about');
+		  $$('.qrcode_large').html('<img width=50% src="https://muztemptation.com/contents/api/mobile_qrcode.php?email='+localStorage.getItem("email")+'">');
+		});
+
+
+		$$('.popup-about').on('popup:opened', function () {
+			$$('.qrcode_view').html('test');
+		  $$('.qrcode_large').html('<img src="https://muztemptation.com/contents/api/mobile_qrcode.php?email='+localStorage.getItem("email")+'">');
+		});
+         
+         
+         setInterval(function(){
+			$$.post('http://muz.allstar-m.com/contents/api/mobile.php', {email:localStorage.getItem("email"), password: localStorage.getItem("password")}, function (data) {
+				if(data!="0")
+				{
+					
+					var dt=JSON.parse(data);
+					
+					$$('.mtt').html(dt.mtt);
+					$$('.usd').html(dt.usd);
+
+					
+				}
+
+			});
+			
+
+
+			$$.post('http://muz.allstar-m.com/contents/api/mobile_transaction.php', {email:localStorage.getItem("email"), password: localStorage.getItem("password")}, function (data) {
+				if(data!="0")
+				{
+					
+					$$('.transactions').html(data);
+
+					
+				}
+
+			});
+			
+			
+			
+			
+			
+         }, 2000);
+      </script>
+
+
+   </body>
+
+</html>
